@@ -70,8 +70,10 @@ main(){
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   # Get zsh syntax highlighting plugin
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  # Get zsh powerlevel10k theme
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   # Change theme by replacing line start with ZSH_THEME with what we actually want
-  sed -i "/^ZSH_THEME=/c\ZSH_THEME="jonathan"" ${HOME}/.zshrc
+  sed -i "/^ZSH_THEME=/c\ZSH_THEME="powerlevel10k/powerlevel10k"" ${HOME}/.zshrc
   # Change plugins line
   sed -i "/^plugins=/c\(git zsh-autosuggestiosn zsh-syntax-highlighting)" ${HOME}/.zshrc
   

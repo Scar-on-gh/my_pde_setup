@@ -27,6 +27,36 @@ Ensure sourced
 :so
 ```
 
+## Mason Manager:
+### LSP
+
+bashls - For Bash
+clangd - For C, C++
+dockerls
+docker_compose_language_service
+groovyls - For Groovy (Jenkins)
+html
+lua_ls
+perlnavigator
+pyright - For Python
+ruby_ls
+sqls - For SQL
+svlangserver - For SystemVerilog
+yamlls - For YAML
+
+### DAP
+debugpy - For Python
+
+### Linter
+flake8 - For Python
+
+### Formatter
+black - For Python
+isort - For Python
+docformatter - For Python
+
+* Python info: https://stackoverflow.com/a/77153991
+
 ## Useful pages:
 * https://www.lazyvim.org/installation
 * https://github.com/nvim-lua/kickstart.nvim
